@@ -4,14 +4,14 @@ export default function ContactSection() {
       <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
       <p>
         Email:{" "}
-        <a href="mailto:you@example.com" className="underline">
-          you@example.com
+        <a href="mailto:du.aamerr@gmail.com" className="underline">
+          du.aamerr@gmail.com
         </a>
       </p>
       <p>
         GitHub:{" "}
-        <a href="https://github.com/yourusername" className="underline">
-          yourusername
+        <a href="https://github.com/d-a-b-d" className="underline">
+          d-a-b-d
         </a>
       </p>
     </div>

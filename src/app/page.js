@@ -3,7 +3,6 @@ import ProjectsSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
 import Header from "@/components/Header";
 import ProjectDetailSection from "@/components/ProjectAboutSection";
-import projectDetails from "@/data/ProjectAboutText";
 import AnimatedSection from "@/components/AnimatedSection";
 import ProjectPageFirst from "@/components/FirstProject";
 import ProjectPageSecond from "@/components/SecondProject";
@@ -12,9 +11,7 @@ import ProjectPageThird from "@/components/ThirdProject";
 export default function Home() {
   return (
     <main className="scroll-smooth font-mono text-pink-400">
-      {/* === Header + About Section with Background Video === */}
       <div className="relative min-h-screen overflow-hidden">
-        {/* Background Video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
           src="/back.webm"
@@ -24,7 +21,6 @@ export default function Home() {
           playsInline
         />
 
-        {/* Foreground Content */}
         <div className="relative z-10">
           <Header />
           <section
@@ -36,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* === Projects Section and Detail Windows === */}
+      {/* === Projects section */}
       <div className="bg-black relative z-10">
         {/* Main Projects Grid */}
         <AnimatedSection>
@@ -48,26 +44,28 @@ export default function Home() {
           </section>
         </AnimatedSection>
 
-        {/* Project Windows Styled in Pyramid Layout */}
+        {/* First Project */}
         <AnimatedSection delay={0.2}>
           <section id="first-project" className="relative min-h-screen">
             <ProjectPageFirst />
           </section>
         </AnimatedSection>
 
+        {/* Second Project */}
         <AnimatedSection delay={0.4}>
           <section id="second-project" className="relative min-h-screen">
             <ProjectPageSecond />
           </section>
         </AnimatedSection>
 
+        {/* Third Project */}
         <AnimatedSection delay={0.6}>
           <section id="third-project" className="relative min-h-screen">
             <ProjectPageThird />
           </section>
         </AnimatedSection>
 
-        {/* Contact Section */}
+        {/* Contact */}
         <AnimatedSection delay={0.1}>
           <section
             id="contact"

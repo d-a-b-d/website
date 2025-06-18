@@ -1,21 +1,26 @@
+// components/ProjectSection.jsx
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
   return (
-    <div className="min-h-screen p-8 flex flex-col items-center">
-      <h2 className="text-4xl font-bold mb-6">Projects</h2>
+    <div className="w-full flex flex-col items-center justify-center px-4">
+      <h2 className="text-4xl font-bold mb-10 text-center">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <ProjectCard
-          title="Retro Game"
-          description="Pixel art game demo."
-          link="#"
+          title="Banking RESTful API"
+          description="A *humble* attempt at scaling."
+          link="#first-project"
         />
         <ProjectCard
-          title="Terminal Portfolio"
-          description="A CLI-style portfolio site."
-          link="#"
+          title="Fruitector"
+          description="Intelligent fruit quality assessment system."
+          link="#second-project"
         />
-        <ProjectCard title="Blog" description="Minimal dev blog." link="#" />
+        <ProjectCard
+          title="SER"
+          description="Explorations into sequential machine learning?"
+          link="#third-project"
+        />
       </div>
     </div>
   );
