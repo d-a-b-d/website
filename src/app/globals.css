@@ -28,3 +28,17 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 18px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #f472b6; 
+  border: 2px solid #000000;
+  border-radius: 0;
+}
