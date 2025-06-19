@@ -17,8 +17,8 @@ export default function ProjectsSection() {
           link="#second-project"
         />
         <ProjectCard
-          title="SER"
-          description="Explorations into sequential machine learning?"
+          title="Social Media Site"
+          description="Social media API that mimics Facebook's features."
           link="#third-project"
         />
       </div>
