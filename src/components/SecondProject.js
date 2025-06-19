@@ -1,13 +1,16 @@
+import { useState } from "react";
 import { projectVideos } from "@/data/video";
 
 export default function ProjectPageSecond() {
+  const [showImage, setShowImage] = useState(false);
+
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black px-2 py-8">
       <div className="flex gap-4 items-start">
         <div className="flex flex-col gap-3">
           <Window title="Overview.txt">
             <p className="text-sm">
-              A smart fruit quality assessment system using MobileNetV2.
+              Fruit quality assessment system using MobileNetV2.
             </p>
           </Window>
 
@@ -31,8 +34,12 @@ export default function ProjectPageSecond() {
               src="/backend.jpg"
               alt="Screenshot"
               width={230}
-              className="rounded border border-pink-400"
+              className="rounded border border-pink-400 cursor-pointer"
+              onClick={() => setShowImage(true)}
             />
+            <p className="text-xs mt-1 text-pink-300 text-center">
+              Click to enlarge
+            </p>
           </Window>
         </div>
 
@@ -56,10 +63,24 @@ export default function ProjectPageSecond() {
           </div>
         </div>
       </div>
+
+      {showImage && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setShowImage(false)}
+        >
+          <img
+            src="/backend.jpg"
+            alt="Full Backend Screenshot"
+            className="max-w-[90%] max-h-[90%] border-4 border-pink-400 shadow-lg"
+          />
+        </div>
+      )}
     </div>
   );
-}
+} 
 
+// Retro Window Component
 function Window({ title, children }) {
   return (
     <div className="bg-black border-[3px] border-pink-400 shadow-[4px_4px_0_0_#000] text-pink-400 rounded-md max-w-[240px]">
