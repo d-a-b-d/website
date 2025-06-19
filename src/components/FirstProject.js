@@ -4,7 +4,7 @@ export default function ProjectPageFirst() {
       <div className="flex flex-col items-center gap-4 w-full max-w-xs">
         <div className="w-full bg-black border-4 border-pink-400 shadow-[6px_6px_0_0_#000] rounded-md text-pink-400">
           <div className="bg-pink-400 text-black px-3 py-1 font-bold text-sm border-b border-black">
-            Project_Overview.txt
+            Overview.txt
           </div>
           <div className="p-4 text-sm">
             <p>

@@ -42,11 +42,6 @@ export default function ProjectPageSecond() {
         >
           <div className="bg-pink-400 text-black px-2 py-0.5 font-bold flex justify-between items-center text-xs border-b border-black">
             <span>demo_video.webm</span>
-            <div className="flex gap-0.5">
-              <div className="w-2 h-2 bg-black rounded-sm" />
-              <div className="w-2 h-2 bg-black rounded-sm" />
-              <div className="w-2 h-2 bg-black rounded-sm" />
-            </div>
           </div>
           <div className="m-0 p-0 leading-none">
             <iframe
@@ -70,11 +65,6 @@ function Window({ title, children }) {
     <div className="bg-black border-[3px] border-pink-400 shadow-[4px_4px_0_0_#000] text-pink-400 rounded-md max-w-[240px]">
       <div className="bg-pink-400 text-black px-2 py-0.5 font-bold flex justify-between items-center text-xs border-b border-black">
         <span>{title}</span>
-        <div className="flex gap-0.5">
-          <div className="w-2 h-2 bg-black rounded-sm" />
-          <div className="w-2 h-2 bg-black rounded-sm" />
-          <div className="w-2 h-2 bg-black rounded-sm" />
-        </div>
       </div>
       <div className="p-2">{children}</div>
     </div>
