@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { projectVideos } from "@/data/video";
 
@@ -78,7 +80,7 @@ export default function ProjectPageSecond() {
       )}
     </div>
   );
-} 
+}
 
 // Retro Window Component
 function Window({ title, children }) {
